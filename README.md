@@ -1,4 +1,4 @@
-# Implementing_Route_Planner_Algorithm
+# Udacity_Implementing_Route_Planner_Algorithm
 
 In this project you will use A* search to implement a "Google-maps" style route planning algorithm.
 in this project you will find a helpers file and test file.
