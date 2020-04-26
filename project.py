@@ -270,7 +270,6 @@ def create_fScore(self):
     For the first node, that value is completely heuristic."""
     # TODO: return a data structure that holds the total cost of getting from the start node to the goal
     # by passing by that n
-    ode, for each node. That value is partly known, partly heuristic.
     # For the first node, that value is completely heuristic. The rest of the node's value should be 
     # set to infinity.
     fScore = {Node:float("inf") for Node in self.map.intersections}
@@ -431,7 +430,7 @@ def record_best_path_to(self, current, neighbor):
     # TODO: Record the best path to a node, by updating cameFrom, gScore, and fScore
     self.cameFrom[neighbor] = current
     self.gScore[neighbor] = self.get_tentative_gScore(current,neighbor)
-    self.fScore[current] = self.calculate_fscore(current)   
+    self.fScore[neighbor] = self.calculate_fscore(current)   
 
 
 # ### Associating your functions with the `PathPlanner` class
